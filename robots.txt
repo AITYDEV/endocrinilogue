@@ -6,4 +6,4 @@ Disallow: /css/
 Disallow: /js/
 
 # Lien vers le sitemap
-Sitemap: https://aitydev.github.io/endocrinilogue/sitemap.xml
+Sitemap: https://endocrinologue-diabetologue-marrakech.com/sitemap.xml

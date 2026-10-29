@@ -4,18 +4,18 @@
 
   <!-- Page d'accueil (Français - Par défaut) -->
   <url>
-    <loc>https://aitydev.github.io/endocrinilogue/</loc>
+    <loc>https://endocrinologue-diabetologue-marrakech.com/</loc>
     <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://aitydev.github.io/endocrinilogue/index.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://aitydev.github.io/endocrinilogue/index-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://aitydev.github.io/endocrinilogue/index-en.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://endocrinologue-diabetologue-marrakech.com/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://endocrinologue-diabetologue-marrakech.com/index-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://endocrinologue-diabetologue-marrakech.com/index-en.html"/>
   </url>
 
   <!-- Page Arabe -->
   <url>
-    <loc>https://aitydev.github.io/endocrinilogue/index-ar.html</loc>
+    <loc>https://endocrinologue-diabetologue-marrakech.com/index-ar.html</loc>
     <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -23,7 +23,7 @@
 
   <!-- Page Anglaise -->
   <url>
-    <loc>https://aitydev.github.io/endocrinilogue/index-en.html</loc>
+    <loc>https://endocrinologue-diabetologue-marrakech.com/index-en.html</loc>
     <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
