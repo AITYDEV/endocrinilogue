@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags (English) -->
+    <title>
+      Endocrinologist, Diabetologist and Nutritionist in Marrakech | Dr. Farah
+      Elgharroudi
+    </title>
+    <meta
+      name="description"
+      content="Office of Dr. Farah Elgharroudi, specialist in Endocrinology, Diabetology and Nutrition in Marrakech. Book an appointment for diabetes, thyroid, obesity and hormonal disorders."
+    />
+    <meta
+      name="keywords"
+      content="Endocrinologist Marrakech, Diabetologist Marrakech, Nutritionist Marrakech, Dr Farah Elgharroudi, Thyroid Marrakech, Obesity Marrakech, Medical Clinic Marrakech"
+    />
+    <meta name="author" content="Dr. Farah Elgharroudi" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- SEO Multilingue -->
+    <link rel="alternate" hreflang="fr" href="index.html" />
+    <link rel="alternate" hreflang="ar" href="index-ar.html" />
+    <link rel="alternate" hreflang="en" href="index-en.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Endocrinologist, Diabetologist and Nutritionist in Marrakech | Dr. Farah Elgharroudi"
+    />
+    <meta
+      property="og:description"
+      content="Specialist in Endocrinology, Diabetology and Nutrition. Book your appointment at the clinic in Marrakech."
+    />
+    <meta property="og:image" content="images/logo.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- EmailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Physician",
+        "name": "Dr. Farah Elgharroudi",
+        "image": "images/logo.png",
+        "description": "Specialist in Endocrinology, Diabetology and Nutrition in Marrakech.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Avenue Laayoune, Immeuble N°2750, 1er Étage, Appartement N°1, Douar Iziki",
+          "addressLocality": "Marrakech",
+          "addressCountry": "MA"
+        },
+        "telephone": "+212524343533",
+        "openingHours": "Mo-Fr 09:00-17:00, Sa 09:00-13:00",
+        "medicalSpecialty": ["Endocrinology", "Diabetology", "Nutrition"]
+      }
+    </script>
+  </head>
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header class="header" id="header">
+      <div class="container header-content">
+        <a href="#accueil" class="logo-area">
+          <img
+            src="images/logo.png"
+            alt="Dr. Farah Elgharroudi Logo"
+            class="logo-img"
+          />
+          <div class="logo-text">
+            <span class="logo-name">Dr. Farah Elgharroudi</span>
+            <span class="logo-sub"
+              >Endocrinologist · Diabetologist · Nutritionist</span
+            >
+          </div>
+        </a>
+        <nav class="nav">
+          <ul class="nav-list" id="navMenu">
+            <li><a href="#accueil" class="nav-link">Home</a></li>
+            <li><a href="#specialites" class="nav-link">Specialties</a></li>
+            <li><a href="#apropos" class="nav-link">About</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+
+            <!-- SÉLECTEUR DE LANGUE ANGLAIS -->
+            <li>
+              <a
+                href="index.html"
+                class="nav-link lang-link"
+                onclick="localStorage.setItem('preferredLang', 'fr')"
+                title="Français"
+              >
+                <img
+                  src="images/langues/fr.svg"
+                  alt="Français"
+                  class="lang-flag"
+                />
+                FR
+              </a>
+            </li>
+            <li>
+              <a
+                href="index-ar.html"
+                class="nav-link lang-link"
+                onclick="localStorage.setItem('preferredLang', 'ar')"
+                title="العربية"
+              >
+                <img
+                  src="images/langues/ar.svg"
+                  alt="Arabe"
+                  class="lang-flag"
+                />
+                AR
+              </a>
+            </li>
+
+            <li>
+              <a href="#contact" class="btn btn-primary nav-cta">Book Now</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section id="accueil" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="hero-badge"
+          ><i class="fas fa-star"></i> Specialist in Marrakech</span
+        >
+        <h1 class="hero-title">
+          Your endocrine and nutritional health, in good hands.
+        </h1>
+        <p class="hero-subtitle">
+          Dr. Farah Elgharroudi welcomes you to her clinic in Marrakech for
+          personalized care of diabetes, thyroid disorders, obesity and hormonal
+          imbalances.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary btn-lg"
+            ><i class="fas fa-calendar-check"></i> Book an Appointment</a
+          >
+          <a href="tel:+212524343533" class="btn btn-ghost btn-lg"
+            ><i class="fas fa-phone"></i> 05 24 34 35 33</a
+          >
+        </div>
+        <div class="hero-features">
+          <div class="hero-feature">
+            <i class="fas fa-user-md"></i> Certified Specialist
+          </div>
+          <div class="hero-feature">
+            <i class="fas fa-clock"></i> Mon - Fri: 9am-5pm / Sat: 9am-1pm
+          </div>
+          <div class="hero-feature">
+            <i class="fas fa-map-marker-alt"></i> Douar Iziki, Marrakech
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SPECIALITES ================= -->
+    <section id="specialites" class="section section-specialties">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Our areas of expertise</span>
+          <h2 class="section-title">Medical Specialties</h2>
+          <p class="section-desc">
+            Comprehensive and personalized care for every patient.
+          </p>
+        </div>
+        <div class="grid-cards">
+          <article class="card reveal" data-modal="diabete">
+            <div class="card-icon"><i class="fas fa-heartbeat"></i></div>
+            <h3 class="card-title">Diabetology</h3>
+            <p class="card-desc">
+              Diagnosis, treatment and follow-up of type 1 and 2 diabetes.
+            </p>
+            <button class="btn-read-more">
+              Read more <i class="fas fa-arrow-right"></i>
+            </button>
+          </article>
+          <article class="card reveal" data-modal="thyroide">
+            <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3 class="card-title">Thyroid Diseases</h3>
+            <p class="card-desc">
+              Management of dysthyroidism, goiters, nodules and thyroid cancers.
+            </p>
+            <button class="btn-read-more">
+              Read more <i class="fas fa-arrow-right"></i>
+            </button>
+          </article>
+          <article class="card reveal" data-modal="obesite">
+            <div class="card-icon"><i class="fas fa-weight"></i></div>
+            <h3 class="card-title">Obesity & Nutrition</h3>
+            <p class="card-desc">
+              Comprehensive nutritional assessment and management of obesity.
+            </p>
+            <button class="btn-read-more">
+              Read more <i class="fas fa-arrow-right"></i>
+            </button>
+          </article>
+          <article class="card reveal" data-modal="os">
+            <div class="card-icon"><i class="fas fa-bone"></i></div>
+            <h3 class="card-title">Bone & Metabolism</h3>
+            <p class="card-desc">
+              Treatment of osteoporosis and metabolic disorders.
+            </p>
+            <button class="btn-read-more">
+              Read more <i class="fas fa-arrow-right"></i>
+            </button>
+          </article>
+          <article class="card reveal" data-modal="croissance">
+            <div class="card-icon"><i class="fas fa-child"></i></div>
+            <h3 class="card-title">Growth & Puberty</h3>
+            <p class="card-desc">
+              Monitoring of growth abnormalities and pubertal disorders in
+              children.
+            </p>
+            <button class="btn-read-more">
+              Read more <i class="fas fa-arrow-right"></i>
+            </button>
+          </article>
+          <article class="card reveal" data-modal="hormones">
+            <div class="card-icon"><i class="fas fa-flask"></i></div>
+            <h3 class="card-title">Hormonal Disorders</h3>
+            <p class="card-desc">
+              Diagnosis and treatment of pituitary and adrenal dysfunctions.
+            </p>
+            <button class="btn-read-more">
+              Read more <i class="fas fa-arrow-right"></i>
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= A PROPOS ================= -->
+    <section id="apropos" class="section section-about">
+      <div class="container about-grid">
+        <div class="about-image reveal">
+          <img
+            src="images/cabinet.jpg"
+            alt="Dr. Farah Elgharroudi's clinic in Marrakech"
+          />
+          <div class="about-badge">
+            <i class="fas fa-award"></i>
+            <span>Graduate of the Faculty of Medicine of Marrakech</span>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <span class="section-tag">About</span>
+          <h2 class="section-title">Dr. Farah Elgharroudi</h2>
+          <p>
+            Specialist in Endocrinology, Diabetology and Nutrition, Dr.
+            Elgharroudi puts her expertise at the service of her patients for
+            comprehensive and personalized care.
+          </p>
+          <p>
+            A graduate of the Faculty of Medicine and Pharmacy of Marrakech, she
+            combines advanced medical skills and attentive listening to support
+            each patient in their care journey.
+          </p>
+          <ul class="about-list">
+            <li>
+              <i class="fas fa-check-circle"></i> Graduate of the Faculty of
+              Medicine of Marrakech
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> Former physician at CHU
+              Mohammed VI
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> Member of the Moroccan Society
+              of Endocrinology
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> Continuing education in
+              clinical nutrition
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Book an appointment</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section section-contact">
+      <div class="container">
+        <div class="section-header section-header-light">
+          <span class="section-tag section-tag-light">Contact</span>
+          <h2 class="section-title section-title-light">Book an appointment</h2>
+          <p class="section-desc section-desc-light">
+            We will respond to you as soon as possible.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <h4>Clinic Address</h4>
+                <p>
+                  Avenue Laayoune, Immeuble N°2750, 1er Étage, Appartement N°1,
+                  Douar Iziki, Marrakech
+                </p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:+212524343533">05 24 34 35 33</a> (Landline)</p>
+                <p>
+                  <a href="tel:+212615220051">06 15 22 00 51</a> (Mobile /
+                  WhatsApp)
+                </p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h4>Email</h4>
+                <p>
+                  <a href="mailto:dr.farah.elgharroudi@gmail.com"
+                    >dr.farah.elgharroudi@gmail.com</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <h4>Opening Hours</h4>
+                <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                <p>Saturday: 9:00 AM - 1:00 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper reveal">
+            <form id="contactForm" class="contact-form">
+              <h3>Send us a message</h3>
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="user_name"
+                  required
+                  placeholder="Your name"
+                />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone Number *</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="user_phone"
+                    required
+                    placeholder="Your phone number"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Reason for consultation</label>
+                <select id="subject" name="subject">
+                  <option value="Diabetes">Diabetes</option>
+                  <option value="Thyroid">Thyroid Disease</option>
+                  <option value="Obesity / Nutrition">
+                    Obesity / Nutrition
+                  </option>
+                  <option value="Hormonal disorders">Hormonal disorders</option>
+                  <option value="Growth / Puberty">Growth / Puberty</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  placeholder="Your message..."
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary btn-block"
+                id="submitBtn"
+              >
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+
+              <!-- MESSAGE DE STATUT -->
+              <div id="formStatus" class="form-status"></div>
+            </form>
+          </div>
+        </div>
+
+        <div class="map-wrapper reveal">
+          <iframe
+            src="https://www.google.com/maps?q=31.623419,-8.058619&hl=en&z=16&output=embed"
+            allowfullscreen=""
+            loading="lazy"
+            title="Clinic Location"
+          ></iframe>
+          <a
+            href="https://www.google.com/maps/dir/?api=1&destination=31.623419,-8.058619"
+            target="_blank"
+            class="btn btn-primary map-btn"
+          >
+            <i class="fas fa-directions"></i> Get Directions
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="Logo" class="footer-logo" />
+          <p>
+            Medical clinic specialized in Endocrinology, Diabetology and
+            Nutrition in Marrakech.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#accueil">Home</a></li>
+            <li><a href="#specialites">Specialties</a></li>
+            <li><a href="#apropos">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Avenue Laayoune, Douar Iziki,
+            Marrakech
+          </p>
+          <p>
+            <i class="fas fa-phone"></i> 05 24 34 35 33 <br />
+            06 15 22 00 51
+          </p>
+          <p><i class="fas fa-envelope"></i> dr.farah.elgharroudi@gmail.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Dr. Farah Elgharroudi. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- ================= WHATSAPP ================= -->
+    <a
+      href="https://wa.me/212615220051?text=Hello%20Dr.%20Elgharroudi%2C%20I%20would%20like%20to%20book%20an%20appointment."
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+      <span class="whatsapp-tooltip">Book an appointment</span>
+    </a>
+
+    <!-- ================= MODALES ================= -->
+    <div class="modal" id="modal-diabete">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close">&times;</button>
+        <div class="modal-image">
+          <img src="images/specialite-diabete.jpg" alt="Diabetology" />
+        </div>
+        <div class="modal-body">
+          <span class="modal-tag">Specialty</span>
+          <h3>Diabetology</h3>
+          <p>Comprehensive diabetes care:</p>
+          <ul>
+            <li>Type 1 and type 2 diabetes</li>
+            <li>Gestational diabetes</li>
+            <li>Complication screening and follow-up</li>
+            <li>Patient therapeutic education</li>
+            <li>Insulin pumps and glucose sensors</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary modal-btn-rdv"
+            >Book an appointment</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-thyroide">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close">&times;</button>
+        <div class="modal-image">
+          <img src="images/specialite-thyroide.jpg" alt="Thyroid" />
+        </div>
+        <div class="modal-body">
+          <span class="modal-tag">Specialty</span>
+          <h3>Thyroid Diseases</h3>
+          <p>Management of thyroid pathologies:</p>
+          <ul>
+            <li>Hypothyroidism and hyperthyroidism</li>
+            <li>Thyroid nodules and goiters</li>
+            <li>Thyroiditis (Hashimoto, Basedow)</li>
+            <li>Thyroid cancers</li>
+            <li>Pregnancy monitoring</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary modal-btn-rdv"
+            >Book an appointment</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-obesite">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close">&times;</button>
+        <div class="modal-image">
+          <img src="images/specialite-obesite.jpg" alt="Obesity" />
+        </div>
+        <div class="modal-body">
+          <span class="modal-tag">Specialty</span>
+          <h3>Obesity & Nutrition</h3>
+          <p>Comprehensive and personalized care:</p>
+          <ul>
+            <li>Complete nutritional assessment</li>
+            <li>Management of overweight and obesity</li>
+            <li>Eating disorders</li>
+            <li>Therapeutic nutrition</li>
+            <li>Personalized dietary follow-up</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary modal-btn-rdv"
+            >Book an appointment</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-os">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close">&times;</button>
+        <div class="modal-image">
+          <img src="images/specialite-os.jpg" alt="Bone" />
+        </div>
+        <div class="modal-body">
+          <span class="modal-tag">Specialty</span>
+          <h3>Bone & Metabolism</h3>
+          <p>Management of bone and metabolic pathologies:</p>
+          <ul>
+            <li>Osteoporosis and osteopenia</li>
+            <li>Adrenal diseases</li>
+            <li>Phosphocalcic metabolism disorders</li>
+            <li>Vitamin D deficiencies</li>
+            <li>Menopause assessment and follow-up</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary modal-btn-rdv"
+            >Book an appointment</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-croissance">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close">&times;</button>
+        <div class="modal-image">
+          <img src="images/specialite-croissance.jpg" alt="Growth" />
+        </div>
+        <div class="modal-body">
+          <span class="modal-tag">Specialty</span>
+          <h3>Growth & Puberty</h3>
+          <p>Specialized follow-up for children and adolescents:</p>
+          <ul>
+            <li>Growth retardation</li>
+            <li>Puberty delay</li>
+            <li>Precocious puberty</li>
+            <li>Short stature</li>
+            <li>Pediatric hormonal follow-up</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary modal-btn-rdv"
+            >Book an appointment</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-hormones">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close">&times;</button>
+        <div class="modal-image">
+          <img src="images/specialite-hormones.jpg" alt="Hormones" />
+        </div>
+        <div class="modal-body">
+          <span class="modal-tag">Specialty</span>
+          <h3>Hormonal Disorders</h3>
+          <p>Diagnosis and treatment of hormonal imbalances:</p>
+          <ul>
+            <li>Pituitary dysfunctions</li>
+            <li>Adrenal disorders</li>
+            <li>Reproductive disorders</li>
+            <li>Polycystic ovary syndrome (PCOS)</li>
+            <li>Cycle disorders</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary modal-btn-rdv"
+            >Book an appointment</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

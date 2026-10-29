@@ -2,6 +2,7 @@
    INITIALISATION
 ========================================================= */
 document.addEventListener("DOMContentLoaded", () => {
+  initLanguageRedirect();
   initHeaderScroll();
   initMobileMenu();
   initSmoothScroll();
@@ -11,20 +12,52 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /* =========================================================
+   GESTION DE LA LANGUE (Redirection)
+========================================================= */
+// function initLanguageRedirect() {
+//   const currentPath = window.location.pathname;
+INITIALISATION;
+//   // Si on est sur la page française (index.html ou racine)
+//   if (currentPath.endsWith("/") || currentPath.includes("index.html")) {
+//     const savedLang = localStorage.getItem("preferredLang");
+//     if (savedLang === "ar") window.location.href = "index-ar.html";
+//     if (savedLang === "en") window.location.href = "index-en.html";
+//   }
+// }
+
+function initLanguageRedirect() {
+  const currentPath = window.location.pathname;
+  const savedLang = localStorage.getItem("preferredLang");
+
+  // 1. Si on est sur la page Française
+  if (currentPath.endsWith("/") || currentPath.includes("index.html")) {
+    if (savedLang === "ar") window.location.href = "index-ar.html";
+    if (savedLang === "en") window.location.href = "index-en.html";
+  }
+
+  // 2. Si on est sur la page Arabe
+  if (currentPath.includes("index-ar.html")) {
+    if (savedLang === "fr") window.location.href = "index.html";
+    if (savedLang === "en") window.location.href = "index-en.html";
+  }
+
+  // 3. Si on est sur la page Anglaise
+  if (currentPath.includes("index-en.html")) {
+    if (savedLang === "fr") window.location.href = "index.html";
+    if (savedLang === "ar") window.location.href = "index-ar.html";
+  }
+}
+
+/* =========================================================
    HEADER : Changement au scroll
 ========================================================= */
 function initHeaderScroll() {
   const header = document.getElementById("header");
   if (!header) return;
-
   const onScroll = () => {
-    if (window.scrollY > 40) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
-    }
+    if (window.scrollY > 40) header.classList.add("scrolled");
+    else header.classList.remove("scrolled");
   };
-
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 }
@@ -47,7 +80,6 @@ function initMobileMenu() {
     }
   });
 
-  // Fermer le menu au clic sur un lien
   document.querySelectorAll(".nav-link, .nav-cta").forEach((link) => {
     link.addEventListener("click", () => {
       nav.classList.remove("active");
@@ -59,7 +91,6 @@ function initMobileMenu() {
     });
   });
 
-  // Fermer au clic extérieur
   document.addEventListener("click", (e) => {
     if (!nav.contains(e.target) && !btn.contains(e.target)) {
       nav.classList.remove("active");
@@ -73,14 +104,13 @@ function initMobileMenu() {
 }
 
 /* =========================================================
-   SMOOTH SCROLL (fallback pour anciens navigateurs)
+   SMOOTH SCROLL
 ========================================================= */
 function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       const targetId = this.getAttribute("href");
       if (targetId === "#" || targetId.length < 2) return;
-
       const target = document.querySelector(targetId);
       if (target) {
         e.preventDefault();
@@ -88,11 +118,7 @@ function initSmoothScroll() {
         const elementPosition =
           target.getBoundingClientRect().top + window.pageYOffset;
         const offsetPosition = elementPosition - headerOffset;
-
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth",
-        });
+        window.scrollTo({ top: offsetPosition, behavior: "smooth" });
       }
     });
   });
@@ -106,7 +132,6 @@ function initModals() {
   const modals = document.querySelectorAll(".modal");
   const closeButtons = document.querySelectorAll(".modal-close");
 
-  // Ouvrir
   triggers.forEach((trigger) => {
     trigger.addEventListener("click", () => {
       const modalId = "modal-" + trigger.getAttribute("data-modal");
@@ -118,7 +143,6 @@ function initModals() {
     });
   });
 
-  // Fermer via bouton
   closeButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
       const modal = btn.closest(".modal");
@@ -126,14 +150,12 @@ function initModals() {
     });
   });
 
-  // Fermer via clic extérieur
   modals.forEach((modal) => {
     modal.addEventListener("click", (e) => {
       if (e.target === modal) closeModal(modal);
     });
   });
 
-  // Fermer via touche Échap
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
       modals.forEach((modal) => {
@@ -142,7 +164,6 @@ function initModals() {
     }
   });
 
-  // Bouton "Prendre RDV" dans la modale
   document.querySelectorAll(".modal-btn-rdv").forEach((btn) => {
     btn.addEventListener("click", () => {
       const modal = btn.closest(".modal");
@@ -157,7 +178,7 @@ function closeModal(modal) {
 }
 
 /* =========================================================
-   ANIMATIONS AU SCROLL (Reveal)
+   ANIMATIONS AU SCROLL
 ========================================================= */
 function initRevealAnimations() {
   const reveals = document.querySelectorAll(".reveal");
@@ -177,31 +198,25 @@ function initRevealAnimations() {
         }
       });
     },
-    {
-      threshold: 0.12,
-      rootMargin: "0px 0px -50px 0px",
-    },
+    { threshold: 0.12, rootMargin: "0px 0px -50px 0px" },
   );
 
   reveals.forEach((el) => observer.observe(el));
 }
 
 /* =========================================================
-   FORMULAIRE CONTACT (EmailJS)
+   FORMULAIRE CONTACT (EmailJS) + MESSAGES
 ========================================================= */
 function initContactForm() {
-  // ⚠️ IMPORTANT : Remplacez ces valeurs par vos identifiants EmailJS
-  // 1. Créez un compte sur https://www.emailjs.com/
-  // 2. Ajoutez un service (Gmail) et un template
-  // 3. Récupérez votre Public Key dans Account > API Keys
-  const PUBLIC_KEY = "VOTRE_PUBLIC_KEY_ICI";
-  const SERVICE_ID = "VOTRE_SERVICE_ID_ICI";
-  const TEMPLATE_ID = "VOTRE_TEMPLATE_ID_ICI";
+  // ⚠️ Vos identifiants EmailJS
+  const PUBLIC_KEY = "tPvo3OTMw4SfvFXWw";
+  const SERVICE_ID = "service_71lfzb6";
+  const TEMPLATE_ID = "template_pxgumpf";
 
   const form = document.getElementById("contactForm");
   if (!form) return;
 
-  // Initialisation EmailJS
+  // Initialisation d'EmailJS
   if (typeof emailjs !== "undefined") {
     emailjs.init(PUBLIC_KEY);
   }
@@ -213,13 +228,12 @@ function initContactForm() {
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    // Validation basique
+    // Validation basique des champs
     const name = form.user_name.value.trim();
     const phone = form.user_phone.value.trim();
-    const email = form.user_email.value.trim();
     const message = form.message.value.trim();
 
-    if (!name || !phone || !email || !message) {
+    if (!name || !phone || !message) {
       showStatus(
         statusEl,
         "Veuillez remplir tous les champs obligatoires.",
@@ -232,12 +246,13 @@ function initContactForm() {
     submitBtn.disabled = true;
     submitBtn.innerHTML =
       '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
-    showStatus(statusEl, "", "");
+    showStatus(statusEl, "", ""); // Efface l'ancien message
 
     // Envoi via EmailJS
     emailjs
       .sendForm(SERVICE_ID, TEMPLATE_ID, this)
       .then(() => {
+        // ✅ SUCCÈS
         showStatus(
           statusEl,
           "✓ Votre message a bien été envoyé. Nous vous contacterons très prochainement.",
@@ -248,6 +263,7 @@ function initContactForm() {
         submitBtn.innerHTML = originalBtnHTML;
       })
       .catch((error) => {
+        // ❌ ERREUR
         console.error("Erreur EmailJS:", error);
         showStatus(
           statusEl,

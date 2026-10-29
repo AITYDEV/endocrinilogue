@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags (Arabe) -->
+    <title>
+      أخصائية الغدد الصماء والسكري والتغذية بمراكش | الدكتورة فرح الغرودي
+    </title>
+    <meta
+      name="description"
+      content="عيادة الدكتورة فرح الغرودي، أخصائية في الغدد الصماء والسكري والتغذية بمراكش. لحجز موعد لعلاج السكري، الغدة الدرقية، السمنة والاضطرابات الهرمونية."
+    />
+    <meta
+      name="keywords"
+      content="أخصائية الغدد الصماء مراكش, طبيبة سكري مراكش, أخصائية تغذية مراكش, الدكتورة فرح الغرودي, الغدة الدرقية مراكش, السمنة مراكش"
+    />
+    <meta name="author" content="Dr. Farah Elgharroudi" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- SEO Multilingue -->
+    <link rel="alternate" hreflang="fr" href="index.html" />
+    <link rel="alternate" hreflang="ar" href="index-ar.html" />
+    <link rel="alternate" hreflang="en" href="index-en.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="أخصائية الغدد الصماء والسكري والتغذية بمراكش | الدكتورة فرح الغرودي"
+    />
+    <meta
+      property="og:description"
+      content="أخصائية في الغدد الصماء والسكري والتغذية. احجز موعدك في العيادة بمراكش."
+    />
+    <meta property="og:image" content="images/logo.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts (Ajout d'une police pour l'arabe : Cairo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Cairo:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- EmailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Physician",
+        "name": "Dr. Farah Elgharroudi",
+        "image": "images/logo.png",
+        "description": "أخصائية في الغدد الصماء والسكري والتغذية بمراكش.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "شارع العيون، عمارة رقم 2750، الطابق الأول، شقة رقم 1، دوار إيزيكي",
+          "addressLocality": "مراكش",
+          "addressCountry": "MA"
+        },
+        "telephone": "+212524343533",
+        "openingHours": "Mo-Fr 09:00-17:00, Sa 09:00-13:00",
+        "medicalSpecialty": ["Endocrinology", "Diabetology", "Nutrition"]
+      }
+    </script>
+  </head>
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header class="header" id="header">
+      <div class="container header-content">
+        <a href="#accueil" class="logo-area">
+          <img
+            src="images/logo.png"
+            alt="شعار الدكتورة فرح الغرودي"
+            class="logo-img"
+          />
+          <div class="logo-text">
+            <span
+              class="logo-name"
+              style="font-family: &quot;Cairo&quot;, sans-serif"
+              >الدكتورة فرح الغرودي</span
+            >
+            <span
+              class="logo-sub"
+              style="font-family: &quot;Cairo&quot;, sans-serif"
+              >أخصائية الغدد الصماء · السكري · التغذية</span
+            >
+          </div>
+        </a>
+        <nav class="nav">
+          <ul class="nav-list" id="navMenu">
+            <li><a href="#accueil" class="nav-link">الرئيسية</a></li>
+            <li><a href="#specialites" class="nav-link">التخصصات</a></li>
+            <li><a href="#apropos" class="nav-link">من نحن</a></li>
+            <li><a href="#contact" class="nav-link">اتصل بنا</a></li>
+
+            <!-- SÉLECTEUR DE LANGUE ARABE -->
+            <li>
+              <a
+                href="index.html"
+                class="nav-link lang-link"
+                onclick="localStorage.setItem('preferredLang', 'fr')"
+                title="Français"
+              >
+                <img
+                  src="images/langues/fr.svg"
+                  alt="Français"
+                  class="lang-flag"
+                />
+                FR
+              </a>
+            </li>
+            <li>
+              <a
+                href="index-en.html"
+                class="nav-link lang-link"
+                onclick="localStorage.setItem('preferredLang', 'en')"
+                title="English"
+              >
+                <img
+                  src="images/langues/gb.svg"
+                  alt="Anglais"
+                  class="lang-flag"
+                />
+                EN
+              </a>
+            </li>
+
+            <li>
+              <a href="#contact" class="btn btn-primary nav-cta">حجز موعد</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section id="accueil" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="hero-badge"
+          ><i class="fas fa-star"></i> أخصائية بمراكش</span
+        >
+        <h1 class="hero-title">
+          صحتك في الغدد الصماء والتغذية بين أيدٍ أمينة.
+        </h1>
+        <p class="hero-subtitle">
+          تستقبلكم الدكتورة فرح الغرودي في عيادتها بمراكش لتقديم رعاية شخصية
+          لمرض السكري، اضطرابات الغدة الدرقية، السمنة والاختلالات الهرمونية.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary btn-lg"
+            ><i class="fas fa-calendar-check"></i> احجز موعدك</a
+          >
+          <a href="tel:+212524343533" class="btn btn-ghost btn-lg"
+            ><i class="fas fa-phone"></i> 05 24 34 35 33</a
+          >
+        </div>
+        <div class="hero-features">
+          <div class="hero-feature">
+            <i class="fas fa-user-md"></i> أخصائية معتمدة
+          </div>
+          <div class="hero-feature">
+            <i class="fas fa-clock"></i> الاثنين - الجمعة: 9ص-5م / السبت: 9ص-1م
+          </div>
+          <div class="hero-feature">
+            <i class="fas fa-map-marker-alt"></i> دوار إيزيكي، مراكش
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SPECIALITES ================= -->
+    <section id="specialites" class="section section-specialties">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">مجالات خبرتنا</span>
+          <h2 class="section-title">التخصصات الطبية</h2>
+          <p class="section-desc">رعاية شاملة وشخصية لكل مريض.</p>
+        </div>
+        <div class="grid-cards">
+          <article class="card reveal" data-modal="diabete">
+            <div class="card-icon"><i class="fas fa-heartbeat"></i></div>
+            <h3 class="card-title">مرض السكري</h3>
+            <p class="card-desc">
+              تشخيص وعلاج ومتابعة مرض السكري من النوع الأول والثاني.
+            </p>
+            <button class="btn-read-more">
+              اقرأ المزيد <i class="fas fa-arrow-left"></i>
+            </button>
+          </article>
+          <article class="card reveal" data-modal="thyroide">
+            <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3 class="card-title">أمراض الغدة الدرقية</h3>
+            <p class="card-desc">
+              علاج قصور وفرط نشاط الغدة الدرقية، التضخم، والعقيدات.
+            </p>
+            <button class="btn-read-more">
+              اقرأ المزيد <i class="fas fa-arrow-left"></i>
+            </button>
+          </article>
+          <article class="card reveal" data-modal="obesite">
+            <div class="card-icon"><i class="fas fa-weight"></i></div>
+            <h3 class="card-title">السمنة والتغذية</h3>
+            <p class="card-desc">تقييم غذائي شامل وعلاج السمنة وزيادة الوزن.</p>
+            <button class="btn-read-more">
+              اقرأ المزيد <i class="fas fa-arrow-left"></i>
+            </button>
+          </article>
+          <article class="card reveal" data-modal="os">
+            <div class="card-icon"><i class="fas fa-bone"></i></div>
+            <h3 class="card-title">العظام والتمثيل الغذائي</h3>
+            <p class="card-desc">
+              علاج هشاشة العظام واضطرابات التمثيل الغذائي.
+            </p>
+            <button class="btn-read-more">
+              اقرأ المزيد <i class="fas fa-arrow-left"></i>
+            </button>
+          </article>
+          <article class="card reveal" data-modal="croissance">
+            <div class="card-icon"><i class="fas fa-child"></i></div>
+            <h3 class="card-title">النمو والبلوغ</h3>
+            <p class="card-desc">متابعة اضطرابات النمو والبلوغ لدى الأطفال.</p>
+            <button class="btn-read-more">
+              اقرأ المزيد <i class="fas fa-arrow-left"></i>
+            </button>
+          </article>
+          <article class="card reveal" data-modal="hormones">
+            <div class="card-icon"><i class="fas fa-flask"></i></div>
+            <h3 class="card-title">الاضطرابات الهرمونية</h3>
+            <p class="card-desc">
+              تشخيص وعلاج الخلل في الغدة النخامية والكظرية.
+            </p>
+            <button class="btn-read-more">
+              اقرأ المزيد <i class="fas fa-arrow-left"></i>
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= A PROPOS ================= -->
+    <section id="apropos" class="section section-about">
+      <div class="container about-grid">
+        <div class="about-image reveal">
+          <img
+            src="images/cabinet.jpg"
+            alt="عيادة الدكتورة فرح الغرودي بمراكش"
+          />
+          <div class="about-badge">
+            <i class="fas fa-award"></i>
+            <span>خريجة كلية الطب والصيدلة بمراكش</span>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <span class="section-tag">من نحن</span>
+          <h2 class="section-title">الدكتورة فرح الغرودي</h2>
+          <p>
+            أخصائية في الغدد الصماء والسكري والتغذية، تضع الدكتورة الغرودي
+            خبرتها في خدمة مرضاها لتقديم رعاية شاملة وشخصية.
+          </p>
+          <p>
+            خريجة كلية الطب والصيدلة بمراكش، تجمع بين المهارات الطبية الدقيقة
+            والاستماع الجيد لمرافقة كل مريض في رحلة علاجه.
+          </p>
+          <ul class="about-list">
+            <li><i class="fas fa-check-circle"></i> خريجة كلية الطب بمراكش</li>
+            <li>
+              <i class="fas fa-check-circle"></i> طبيبة سابقة بالمستشفى الجامعي
+              محمد السادس
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> عضو الجمعية المغربية للغدد
+              الصماء
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> تدريب مستمر في التغذية
+              العلاجية
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">احجز موعدك</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section section-contact">
+      <div class="container">
+        <div class="section-header section-header-light">
+          <span class="section-tag section-tag-light">اتصل بنا</span>
+          <h2 class="section-title section-title-light">احجز موعدك</h2>
+          <p class="section-desc section-desc-light">
+            سنرد عليك في أقرب وقت ممكن.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <h4>عنوان العيادة</h4>
+                <p>
+                  شارع العيون، عمارة رقم 2750، الطابق الأول، شقة رقم 1، دوار
+                  إيزيكي، مراكش
+                </p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+              <div>
+                <h4>الهاتف</h4>
+                <p>
+                  <a href="tel:+212524343533" dir="ltr">05 24 34 35 33</a>
+                  (ثابت)
+                </p>
+                <p>
+                  <a href="tel:+212615220051" dir="ltr">06 15 22 00 51</a>
+                  (محمول / واتساب)
+                </p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h4>البريد الإلكتروني</h4>
+                <p>
+                  <a href="mailto:dr.farah.elgharroudi@gmail.com"
+                    >dr.farah.elgharroudi@gmail.com</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <h4>ساعات العمل</h4>
+                <p>الاثنين - الجمعة: 9:00 - 17:00</p>
+                <p>السبت: 9:00 - 13:00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper reveal">
+            <form id="contactForm" class="contact-form">
+              <h3>أرسل لنا رسالة</h3>
+              <div class="form-group">
+                <label for="name">الاسم الكامل *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="user_name"
+                  required
+                  placeholder="اسمك"
+                />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">رقم الهاتف *</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="user_phone"
+                    required
+                    placeholder="رقم هاتفك"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">سبب الاستشارة</label>
+                <select id="subject" name="subject">
+                  <option value="السكري">السكري</option>
+                  <option value="الغدة الدرقية">أمراض الغدة الدرقية</option>
+                  <option value="السمنة / التغذية">السمنة / التغذية</option>
+                  <option value="الاضطرابات الهرمونية">
+                    الاضطرابات الهرمونية
+                  </option>
+                  <option value="النمو / البلوغ">النمو / البلوغ</option>
+                  <option value="أخرى">أخرى</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">الرسالة *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  placeholder="رسالتك..."
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary btn-block"
+                id="submitBtn"
+              >
+                <i class="fas fa-paper-plane"></i> إرسال الرسالة
+              </button>
+
+              <!-- MESSAGE DE STATUT -->
+              <div id="formStatus" class="form-status"></div>
+            </form>
+          </div>
+        </div>
+
+        <div class="map-wrapper reveal">
+          <iframe
+            src="https://www.google.com/maps?q=31.623419,-8.058619&hl=ar&z=16&output=embed"
+            allowfullscreen=""
+            loading="lazy"
+            title="موقع العيادة"
+          ></iframe>
+          <a
+            href="https://www.google.com/maps/dir/?api=1&destination=31.623419,-8.058619"
+            target="_blank"
+            class="btn btn-primary map-btn"
+          >
+            <i class="fas fa-directions"></i> الحصول على الاتجاهات
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="Logo" class="footer-logo" />
+          <p>عيادة طبية متخصصة في الغدد الصماء والسكري والتغذية بمراكش.</p>
+        </div>
+        <div class="footer-links">
+          <h4>روابط سريعة</h4>
+          <ul>
+            <li><a href="#accueil">الرئيسية</a></li>
+            <li><a href="#specialites">التخصصات</a></li>
+            <li><a href="#apropos">من نحن</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>اتصل بنا</h4>
+          <p><i class="fas fa-map-marker-alt"></i> دوار إيزيكي، مراكش</p>
+          <p dir="ltr">
+            <i class="fas fa-phone"></i> 05 24 34 35 33 <br />
+            06 15 22 00 51
+          </p>
+          <p><i class="fas fa-envelope"></i> dr.farah.elgharroudi@gmail.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 الدكتورة فرح الغرودي. جميع الحقوق محفوظة.</p>
+      </div>
+    </footer>
+
+    <!-- ================= WHATSAPP ================= -->
+    <a
+      href="https://wa.me/212615220051?text=مرحباً%20دكتورة%20فرح،%20أرغب%20في%20حجز%20موعد."
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+      <span class="whatsapp-tooltip">احجز موعدك</span>
+    </a>
+
+    <!-- ================= MODALES ================= -->
+    <div class="modal" id="modal-diabete">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="إغلاق">&times;</button>
+        <div class="modal-image">
+          <img src="images/specialite-diabete.jpg" alt="السكري" />
+        </div>
+        <div class="modal-body">
+          <span class="modal-tag">تخصص</span>
+          <h3>مرض السكري</h3>
+          <p>رعاية شاملة لمرض السكري:</p>
+          <ul>
+            <li>السكري من النوع الأول والثاني</li>
+            <li>سكري الحمل</li>
+            <li>الفحص ومتابعة المضاعفات</li>
+            <li>التثقيف العلاجي للمريض</li>
+            <li>مضخات الأنسولين وأجهزة استشعار الجلوكوز</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary modal-btn-rdv"
+            >احجز موعدك</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-thyroide">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="إغلاق">&times;</button>
+        <div class="modal-image">
+          <img src="images/specialite-thyroide.jpg" alt="الغدة الدرقية" />
+        </div>
+        <div class="modal-body">
+          <span class="modal-tag">تخصص</span>
+          <h3>أمراض الغدة الدرقية</h3>
+          <p>إدارة أمراض الغدة الدرقية:</p>
+          <ul>
+            <li>قصور وفرط نشاط الغدة الدرقية</li>
+            <li>عقيدات الغدة الدرقية وتضخمها</li>
+            <li>التهاب الغدة الدرقية (هاشيموتو، بازيدو)</li>
+            <li>سرطان الغدة الدرقية</li>
+            <li>متابعة الحمل</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary modal-btn-rdv"
+            >احجز موعدك</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-obesite">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="إغلاق">&times;</button>
+        <div class="modal-image">
+          <img src="images/specialite-obesite.jpg" alt="السمنة" />
+        </div>
+        <div class="modal-body">
+          <span class="modal-tag">تخصص</span>
+          <h3>السمنة والتغذية</h3>
+          <p>رعاية شاملة وشخصية:</p>
+          <ul>
+            <li>تقييم غذائي شامل</li>
+            <li>علاج زيادة الوزن والسمنة</li>
+            <li>اضطرابات الأكل</li>
+            <li>التغذية العلاجية</li>
+            <li>متابعة غذائية شخصية</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary modal-btn-rdv"
+            >احجز موعدك</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-os">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="إغلاق">&times;</button>
+        <div class="modal-image">
+          <img src="images/specialite-os.jpg" alt="العظام" />
+        </div>
+        <div class="modal-body">
+          <span class="modal-tag">تخصص</span>
+          <h3>العظام والتمثيل الغذائي</h3>
+          <p>إدارة أمراض العظام والتمثيل الغذائي:</p>
+          <ul>
+            <li>هشاشة العظام</li>
+            <li>أمراض الغدة الكظرية</li>
+            <li>اضطرابات استقلاب الكالسيوم والفوسفور</li>
+            <li>نقص فيتامين د</li>
+            <li>فحص ومتابعة سن اليأس</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary modal-btn-rdv"
+            >احجز موعدك</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-croissance">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="إغلاق">&times;</button>
+        <div class="modal-image">
+          <img src="images/specialite-croissance.jpg" alt="النمو" />
+        </div>
+        <div class="modal-body">
+          <span class="modal-tag">تخصص</span>
+          <h3>النمو والبلوغ</h3>
+          <p>متابعة متخصصة للأطفال والمراهقين:</p>
+          <ul>
+            <li>تأخر النمو</li>
+            <li>تأخر البلوغ</li>
+            <li>البلوغ المبكر</li>
+            <li>قصر القامة</li>
+            <li>متابعة الهرمونات لدى الأطفال</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary modal-btn-rdv"
+            >احجز موعدك</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-hormones">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="إغلاق">&times;</button>
+        <div class="modal-image">
+          <img src="images/specialite-hormones.jpg" alt="الهرمونات" />
+        </div>
+        <div class="modal-body">
+          <span class="modal-tag">تخصص</span>
+          <h3>الاضطرابات الهرمونية</h3>
+          <p>تشخيص وعلاج الاختلالات الهرمونية:</p>
+          <ul>
+            <li>خلل الغدة النخامية</li>
+            <li>اضطرابات الغدة الكظرية</li>
+            <li>اضطرابات الإنجاب</li>
+            <li>متلازمة تكيس المبايض</li>
+            <li>اضطرابات الدورة الشهرية</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary modal-btn-rdv"
+            >احجز موعدك</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

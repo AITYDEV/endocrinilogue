@@ -10,7 +10,6 @@
 }
 
 :root {
-  /* Couleurs */
   --primary: #0a2a5c;
   --primary-dark: #061a3d;
   --primary-light: #143b7a;
@@ -26,23 +25,19 @@
   --success: #2e7d32;
   --error: #c62828;
 
-  /* Typographie */
   --font-heading: "Playfair Display", serif;
   --font-body: "Inter", sans-serif;
 
-  /* Espacements */
   --section-padding: 100px 0;
   --container: 1200px;
   --radius: 12px;
   --radius-sm: 8px;
   --radius-lg: 20px;
 
-  /* Ombres */
   --shadow-sm: 0 2px 8px rgba(10, 42, 92, 0.06);
   --shadow: 0 8px 30px rgba(10, 42, 92, 0.08);
   --shadow-lg: 0 20px 60px rgba(10, 42, 92, 0.12);
 
-  /* Transitions */
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -300,7 +295,7 @@ ul {
 }
 
 /* =========================================================
-   HERO — CORRIGÉ
+   HERO
 ========================================================= */
 .hero {
   position: relative;
@@ -308,9 +303,7 @@ ul {
   display: flex;
   align-items: center;
   padding: 140px 0 80px;
-  /* ✅ Fond bleu marine en secours si l'image ne charge pas */
   background-color: var(--primary);
-  /* ✅ Image de fond : chemin relatif depuis le CSS vers le dossier images/ */
   background-image: url("../images/hero-bg.jpg");
   background-size: cover;
   background-position: center center;
@@ -318,9 +311,6 @@ ul {
   color: var(--white);
   overflow: hidden;
 }
-
-/* Si vous préférez que l'image soit dans le même dossier que index.html,
-   utilisez plutôt : url('images/hero-bg.jpg') — voir note ci-dessous */
 
 .hero-overlay {
   position: absolute;
@@ -766,6 +756,7 @@ ul {
   min-height: 110px;
 }
 
+/* ✅ MESSAGES DE STATUT (SUCCÈS / ERREUR) */
 .form-status {
   margin-top: 16px;
   font-size: 0.9rem;
@@ -955,7 +946,7 @@ ul {
 }
 
 /* =========================================================
-   MODALES — CORRIGÉES (IMAGE ENTIÈRE VISIBLE)
+   MODALES
 ========================================================= */
 .modal {
   position: fixed;
@@ -1020,7 +1011,6 @@ ul {
   transform: rotate(90deg);
 }
 
-/* ✅ IMAGE ENTIÈREMENT VISIBLE (pas coupée) */
 .modal-image {
   width: 100%;
   height: auto;
@@ -1038,7 +1028,7 @@ ul {
   width: 100%;
   height: auto;
   max-height: 380px;
-  object-fit: contain; /* ✅ Affiche toute l'image sans la couper */
+  object-fit: contain;
   display: block;
   border-radius: var(--radius);
 }
@@ -1127,11 +1117,9 @@ ul {
     grid-template-columns: 1fr;
     gap: 50px;
   }
-
   .about-image img {
     height: 400px;
   }
-
   .footer-content {
     grid-template-columns: 1fr 1fr;
   }
@@ -1141,11 +1129,9 @@ ul {
   :root {
     --section-padding: 70px 0;
   }
-
   .mobile-menu-btn {
     display: block;
   }
-
   .nav {
     position: fixed;
     top: 80px;
@@ -1158,96 +1144,75 @@ ul {
     transition: transform 0.4s ease;
     z-index: 999;
   }
-
   .nav.active {
     transform: translateY(0);
   }
-
   .nav-list {
     flex-direction: column;
     gap: 0;
     align-items: stretch;
   }
-
   .nav-list li {
     border-bottom: 1px solid var(--border);
   }
-
   .nav-link {
     display: block;
     padding: 16px 0;
   }
-
   .nav-link::after {
     display: none;
   }
-
   .nav-cta {
     margin-top: 16px;
     text-align: center;
     border-bottom: none !important;
   }
-
   .logo-sub {
     display: none;
   }
-
   .hero {
     min-height: auto;
     padding: 120px 0 60px;
   }
-
   .hero-features {
     gap: 16px;
     padding-top: 24px;
   }
-
   .hero-feature {
     font-size: 0.82rem;
   }
-
   .hero-buttons {
     flex-direction: column;
     align-items: stretch;
   }
-
   .hero-buttons .btn {
     width: 100%;
   }
-
   .form-row {
     grid-template-columns: 1fr;
   }
-
   .contact-form-wrapper {
     padding: 28px 22px;
   }
-
   .footer-content {
     grid-template-columns: 1fr;
     gap: 32px;
   }
-
   .map-btn {
     position: static;
     margin: 16px;
     width: calc(100% - 32px);
   }
-
   .modal-body {
     padding: 28px 24px 32px;
   }
-
-  /* ✅ Image modale plus petite sur mobile */
   .modal-image {
     max-height: 250px;
     padding: 8px;
   }
-
   .modal-image img {
     max-height: 230px;
   }
-
   .whatsapp-float {
     width: 54px;
     height: 54px;
@@ -1255,7 +1220,6 @@ ul {
     bottom: 20px;
     right: 20px;
   }
-
   .whatsapp-tooltip {
     display: none;
   }
@@ -1265,12 +1229,84 @@ ul {
   .grid-cards {
     grid-template-columns: 1fr;
   }
-
   .card {
     padding: 28px 24px;
   }
-
   .section-header {
     margin-bottom: 50px;
+  }
+}
+
+/* =========================================================
+   SUPPORT ARABE (RTL)
+========================================================= */
+html[lang="ar"] body,
+html[lang="ar"] h1,
+html[lang="ar"] h2,
+html[lang="ar"] h3,
+html[lang="ar"] .logo-name,
+html[lang="ar"] .logo-sub,
+html[lang="ar"] .btn {
+  font-family: "Cairo", sans-serif !important;
+}
+
+/* Inverser les marges/paddings pour le RTL si nécessaire */
+html[dir="rtl"] .modal-body ul li {
+  padding-left: 0;
+  padding-right: 28px;
+}
+
+html[dir="rtl"] .modal-body ul li::before {
+  left: auto;
+  right: 0;
+}
+
+html[dir="rtl"] .whatsapp-float {
+  right: auto;
+  left: 30px;
+}
+
+html[dir="rtl"] .whatsapp-tooltip {
+  right: auto;
+  left: 75px;
+}
+
+html[dir="rtl"] .whatsapp-tooltip::after {
+  right: auto;
+  left: -6px;
+  border-left-color: transparent;
+  border-right-color: var(--white);
+}
+
+html[dir="rtl"] .map-btn {
+  right: auto;
+  left: 24px;
+}
+/* =========================================================
+   DRAPEAUX DE LANGUE
+========================================================= */
+.lang-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.lang-flag {
+  width: 20px;
+  height: 14px;
+  object-fit: cover;
+  border-radius: 2px; /* Léger arrondi pour faire pro */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Petite ombre pour détacher le drapeau */
+  vertical-align: middle;
+}
+
+/* Ajustement pour le menu mobile (optionnel) */
+@media (max-width: 768px) {
+  .lang-link {
+    justify-content: center;
+  }
+  .lang-flag {
+    width: 24px;
+    height: 16px;
   }
 }

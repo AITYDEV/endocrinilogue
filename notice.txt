@@ -1,0 +1,10 @@
+num  tel -> 05 24 34 35 33
+Horaire lundi a vendredi de 9 17
+        samedi 9 13
+
+
+Récupérer les clés : 
+ notez le Service ID,  service_71lfzb6
+ le Template ID -> template_pxgumpf
+ et la Public Key (dans Account > General),  -> tPvo3OTMw4SfvFXWw
+ puis remplissez-les dans le script.js de votre site web

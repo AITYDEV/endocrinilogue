@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Interdire l'indexation des dossiers techniques
+Disallow: /css/
+Disallow: /js/
+
+# Lien vers le sitemap
+Sitemap: https://aitydev.github.io/endocrinilogue/sitemap.xml
